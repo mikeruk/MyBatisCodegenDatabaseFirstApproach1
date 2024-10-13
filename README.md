@@ -102,6 +102,3 @@ Make sure you have an existing SQL database and tables that match the configurat
 #Additional Information
 For more details on available runtimes, visit the MyBatis Generator Quickstart page.
 The database tables should already exist to match the table configuration in generatorConfig.xml.
-
-![Build Status](https://img.shields.io/github/workflow/status/mikeruk/MyBatisCodegenDatabaseFirstApproach1/Build)
-![License](https://img.shields.io/github/license/mikeruk/MyBatisCodegenDatabaseFirstApproach1)
