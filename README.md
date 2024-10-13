@@ -1,5 +1,5 @@
-![Build Status](https://img.shields.io/github/workflow/status/yourusername/MyBatisCodegenDatabaseFirstApproach1/Build)
-![License](https://img.shields.io/github/license/yourusername/MyBatisCodegenDatabaseFirstApproach1)
+![Build Status](https://github.com/mikeruk/MyBatisCodegenDatabaseFirstApproach1/actions/workflows/build-pipeline.yml/badge.svg)
+![License](https://img.shields.io/github/license/mikeruk/MyBatisCodegenDatabaseFirstApproach1)
 
 # MyBatisCodegenDatabaseFirstApproach1
 
