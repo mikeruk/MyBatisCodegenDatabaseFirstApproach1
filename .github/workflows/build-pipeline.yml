@@ -8,6 +8,7 @@
 name: Gradle Package
 
 on:
+  workflow_dispatch: #must display button to manually start the workflow
   push:
     branches: [ "master" ]
   pull_request:
