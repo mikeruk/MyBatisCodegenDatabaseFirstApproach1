@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- different runtimes for below 'targetRuntime' available here: https://mybatis.org/generator/quickstart.html -->
+    <context id="PostgreSQLTables" targetRuntime="MyBatis3">
+
+        <!-- Database Connection Information -->
+        <jdbcConnection driverClass="org.postgresql.Driver"
+                        connectionURL="jdbc:postgresql://localhost:5444/test1"
+                        userId="postgres"
+                        password="toortoor"/>
+
+        <!--The following 'targetPackage=' locations are freely defined by me.
+            The folders are auto-generated if they don't exist yet.
+            For example, I have the 'demo.mybatiscodegendatabasefirstapproach1' folders,
+            but I don't have the 'generatedClasses.models' folders -  they will be generated automatically
+            -->
+        <!-- Java Model (POJOs) Package -->
+        <javaModelGenerator targetPackage="demo.mybatiscodegendatabasefirstapproach1.generatedClasses.models" targetProject="src/main/java"/>
+
+
+        <!-- Java Mapper Interface Package -->
+        <sqlMapGenerator targetPackage="demo.mybatiscodegendatabasefirstapproach1.generatedClasses.mappers" targetProject="src/main/resources"/>
+
+        <!-- XML Mapper Package -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="demo.mybatiscodegendatabasefirstapproach1.generatedClasses.mappers" targetProject="src/main/java"/>
+
+        <!-- Table Configuration -->
+        <table tableName="books" domainObjectName="Book"/>
+        <!-- Alternatively, you can define multiple <table> elements like this:
+            <table tableName="books" domainObjectName="Book"/>
+            <table tableName="authors" domainObjectName="Author"/>
+            <table tableName="publishers" domainObjectName="Publisher"/> -->
+    </context>
+</generatorConfiguration>

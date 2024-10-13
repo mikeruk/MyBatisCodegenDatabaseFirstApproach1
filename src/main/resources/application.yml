@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: myBatisDemo1
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5444/test1"
+    username: "postgres"
+    password: "toortoor"
+    hikari:
+      connection-timeout: 12000
