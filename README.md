@@ -1,5 +1,5 @@
 ![Build Status](https://github.com/mikeruk/MyBatisCodegenDatabaseFirstApproach1/actions/workflows/build-pipeline.yml/badge.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/schneegans/2ab8f1d386f13aaebccbd87dac94068d/raw/hello-world.json)
 
 # MyBatisCodegenDatabaseFirstApproach1
 
