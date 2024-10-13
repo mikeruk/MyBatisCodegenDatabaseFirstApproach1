@@ -1,3 +1,6 @@
+![Build Status](https://img.shields.io/github/workflow/status/yourusername/MyBatisCodegenDatabaseFirstApproach1/Build)
+![License](https://img.shields.io/github/license/yourusername/MyBatisCodegenDatabaseFirstApproach1)
+
 # MyBatisCodegenDatabaseFirstApproach1
 
 **MyBatis ORM Framework Demo** with code generator that uses local database data to generate Java classes.
