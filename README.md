@@ -90,12 +90,15 @@ In your project, create the file src/main/resources/generatorConfig.xml and popu
 Step 3: Run MyBatis Generator
 To generate the Java classes using MyBatis, run the following command:
 ```cmd 
-./gradlew runMybatisGenerator```
+./gradlew runMybatisGenerator
+```
 
 Step 4: Ensure Database and Table Match Configuration
 Make sure you have an existing SQL database and tables that match the configuration. For example, there must be a table named books in the database:
-```<table tableName="books" domainObjectName="Book"/>```
+```xml 
+<table tableName="books" domainObjectName="Book"/>
+```
 
-Additional Information
+#Additional Information
 For more details on available runtimes, visit the MyBatis Generator Quickstart page.
 The database tables should already exist to match the table configuration in generatorConfig.xml.
