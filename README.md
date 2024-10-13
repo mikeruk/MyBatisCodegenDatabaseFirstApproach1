@@ -1,4 +1,6 @@
 ![Build Status](https://github.com/mikeruk/MyBatisCodegenDatabaseFirstApproach1/actions/workflows/build-pipeline.yml/badge.svg)
+[![Build and Test - my custom name](https://github.com/mikeruk/MyBatisCodegenDatabaseFirstApproach1/actions/workflows/build-pipeline.yml/badge.svg)](https://github.com/mikeruk/MyBatisCodegenDatabaseFirstApproach1/actions/workflows/build-pipeline.yml)
+
 
 # MyBatisCodegenDatabaseFirstApproach1
 
