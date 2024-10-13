@@ -37,21 +37,23 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+```
+
 Also, add this section for MyBatis Generator configuration to your build.gradle:
-mybatisGenerator {
-    verbose = true
-    configFile = file("src/main/resources/generatorConfig.xml")
+```mybatisGenerator {
+verbose = true
+configFile = file("src/main/resources/generatorConfig.xml")
 }
 
 task runMybatisGenerator(type: JavaExec) {
-    main = 'org.mybatis.generator.api.ShellRunner'
-    classpath = sourceSets.main.runtimeClasspath
-    args = ['-configfile', "$projectDir/src/main/resources/generatorConfig.xml", '-overwrite']
+main = 'org.mybatis.generator.api.ShellRunner'
+classpath = sourceSets.main.runtimeClasspath
+args = ['-configfile', "$projectDir/src/main/resources/generatorConfig.xml", '-overwrite']
 }
-
+```
 Step 2: Create the MyBatis Generator Configuration File
 In your project, create the file src/main/resources/generatorConfig.xml and populate it with the following configuration (tailored for PostgreSQL):
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
@@ -83,14 +85,14 @@ In your project, create the file src/main/resources/generatorConfig.xml and popu
         <table tableName="books" domainObjectName="Book"/>
     </context>
 </generatorConfiguration>
-
+```
 Step 3: Run MyBatis Generator
 To generate the Java classes using MyBatis, run the following command:
-./gradlew runMybatisGenerator
+```./gradlew runMybatisGenerator```
 
 Step 4: Ensure Database and Table Match Configuration
 Make sure you have an existing SQL database and tables that match the configuration. For example, there must be a table named books in the database:
-<table tableName="books" domainObjectName="Book"/>
+```<table tableName="books" domainObjectName="Book"/>```
 
 Additional Information
 For more details on available runtimes, visit the MyBatis Generator Quickstart page.
