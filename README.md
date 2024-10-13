@@ -40,7 +40,8 @@ dependencies {
 ```
 
 Also, add this section for MyBatis Generator configuration to your build.gradle:
-```mybatisGenerator {
+```gradle
+mybatisGenerator {
 verbose = true
 configFile = file("src/main/resources/generatorConfig.xml")
 }
@@ -53,7 +54,7 @@ args = ['-configfile', "$projectDir/src/main/resources/generatorConfig.xml", '-o
 ```
 Step 2: Create the MyBatis Generator Configuration File
 In your project, create the file src/main/resources/generatorConfig.xml and populate it with the following configuration (tailored for PostgreSQL):
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
@@ -88,7 +89,8 @@ In your project, create the file src/main/resources/generatorConfig.xml and popu
 ```
 Step 3: Run MyBatis Generator
 To generate the Java classes using MyBatis, run the following command:
-```./gradlew runMybatisGenerator```
+```cmd 
+./gradlew runMybatisGenerator```
 
 Step 4: Ensure Database and Table Match Configuration
 Make sure you have an existing SQL database and tables that match the configuration. For example, there must be a table named books in the database:
