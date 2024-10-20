@@ -10,8 +10,8 @@
         <!-- Database Connection Information -->
         <jdbcConnection driverClass="org.postgresql.Driver"
                         connectionURL="jdbc:postgresql://localhost:5444/test1"
-                        userId="postgres"
-                        password="toortoor"/>
+                        userId="..."
+                        password="..."/>
 
         <!--The following 'targetPackage=' locations are freely defined by me.
             The folders are auto-generated if they don't exist yet.
